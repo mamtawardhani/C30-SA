@@ -21,8 +21,7 @@ function setup() {
   ground = new Ground(0, height - 1, width * 2, 1);
   tower = new Tower(150, 350, 160, 310);
   cannon = new Cannon(180, 110, 100, 50, angle);
-  boat = new Boat(width, height - 100, 200, 200, -100);
-
+//create a boat object
   
 
   
@@ -42,8 +41,7 @@ function draw() {
   for (var i = 0; i < balls.length; i++) {
     showCannonBalls(balls[i], i);
   }
-  boat.display()
-
+//display the boat
   cannon.display();
   tower.display();
 
